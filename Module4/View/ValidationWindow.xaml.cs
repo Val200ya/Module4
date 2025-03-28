@@ -10,6 +10,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
@@ -23,6 +24,9 @@ namespace Module4.View
     {
         ServerRequest request = new ServerRequest();
         WordWriter writer = new WordWriter();
+
+        int rowIndex = 2;
+
         public ValidationWindow()
         {
             InitializeComponent();
@@ -40,14 +44,14 @@ namespace Module4.View
             return result.Substring(result.IndexOf(":") + 2).Replace("\"", "").Replace("}", "");
         }
 
-        private bool isContainingUnknownChars(string text)
+        private bool isContainingUnvalidChars(string text)
         {
-            return Regex.IsMatch(text, @"[^а-яА-ЯёЁ0-9\s]");
+            return Regex.IsMatch(text, @"[^а-яА-ЯЁё\s]");
         }
 
         private void SendResultClickButton(object sender, RoutedEventArgs e)
         {
-            bool hasUnknownChars = isContainingUnknownChars(DataTextBlock.Text);
+            bool hasUnknownChars = isContainingUnvalidChars(DataTextBlock.Text);
             string result = "";
             string validationResult = hasUnknownChars ? "ФИО содержит запрещённые символы" : "Ошибок нет";
             ResultTextBlock.Text = validationResult;
@@ -61,10 +65,14 @@ namespace Module4.View
                 result = "Успешно";
             }
             
-            string filePath = "C:\\Users\\austr\\OneDrive\\Рабочий стол\\ДЕМО\\Module4\\Module4\\ТестКейс.docx";
+            string filePath = "C:\\Users\\admin\\Source\\Repos\\Module4\\Module4\\ТестКейс.docx";
             int tableIndex = 1;
             int columnIndex = 3;
-            int rowIndex = 3;
+
+            if (!result.Equals(""))
+            {
+                rowIndex++;
+            }
 
             writer.writeToWordTable(filePath, tableIndex, rowIndex, columnIndex, result);
         }

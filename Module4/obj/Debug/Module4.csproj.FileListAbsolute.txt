@@ -14,3 +14,19 @@ C:\Users\austr\OneDrive\Рабочий стол\ДЕМО\Module4\Module4\obj\Deb
 C:\Users\austr\OneDrive\Рабочий стол\ДЕМО\Module4\Module4\obj\Debug\Module4.csproj.CoreCompileInputs.cache
 C:\Users\austr\OneDrive\Рабочий стол\ДЕМО\Module4\Module4\obj\Debug\Module4.exe
 C:\Users\austr\OneDrive\Рабочий стол\ДЕМО\Module4\Module4\obj\Debug\Module4.pdb
+C:\Users\admin\Source\Repos\Module4\Module4\bin\Debug\Module4.exe.config
+C:\Users\admin\Source\Repos\Module4\Module4\bin\Debug\Module4.exe
+C:\Users\admin\Source\Repos\Module4\Module4\bin\Debug\Module4.pdb
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.csproj.AssemblyReference.cache
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.csproj.ResolveComReference.cache
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\View\ValidationWindow.g.cs
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\App.g.cs
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4_MarkupCompile.cache
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4_MarkupCompile.lref
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\View\ValidationWindow.baml
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.g.resources
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.Properties.Resources.resources
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.csproj.GenerateResource.cache
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.csproj.CoreCompileInputs.cache
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.exe
+C:\Users\admin\Source\Repos\Module4\Module4\obj\Debug\Module4.pdb

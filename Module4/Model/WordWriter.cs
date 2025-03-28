@@ -30,11 +30,12 @@ namespace Module4.Model
                 }
 
                 wordTable.Cell(rowIndex, columnIndex).Range.Text = data;
+
                 wordDocument.Save();
                 wordDocument.Close();
                 wordApp.Quit();
 
-                MessageBox.Show("Данные были успешно добавлены в таблицу!");
+                MessageBox.Show("Данные были успешно добавлены в таблицу!", "Ура!", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
